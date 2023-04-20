@@ -24,7 +24,7 @@ import java.util.UUID;
 
 
 @RestController
-@RequestMapping("/prodrec")
+@RequestMapping("/prodcollector")
 @CrossOrigin("*") // TODO : need to change allow only "samsung.com"
 public class CollectionController {
 
@@ -36,7 +36,7 @@ public class CollectionController {
     @Autowired
     CollectionRedisRepository collectionRedisRepository;
 
-    @RequestMapping(method = RequestMethod.PUT, path = "/collection")
+    @RequestMapping(method = RequestMethod.PUT, path = "/ ")
     @ResponseBody
     public ResponseEntity<Response> putCollection(HttpServletRequest request,
                                                   @RequestHeader("country") String country,
